@@ -1,0 +1,4 @@
+{
+    "solidity.compileUsingRemoteVersion": "0.8.13",
+    "explorer.autoReveal": false
+}

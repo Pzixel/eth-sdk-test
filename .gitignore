@@ -1,1 +1,12 @@
 node_modules
+coverage
+coverage.json
+build
+bin
+artifacts
+cache
+.idea
+.env
+dist
+typechain-types
+tenderly.yaml
