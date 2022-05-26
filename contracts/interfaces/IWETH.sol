@@ -10,7 +10,10 @@ interface IWETH is IERC20 {
     function withdraw(uint256 wad) external;
 }
 
-
 contract Test is IWETH, ERC20 {
-    cons
+    // solhint-disable-next-line no-empty-blocks
+    constructor(string memory name, string memory symbol) ERC20(name, symbol) {}
+
+    function deposit() external payable {}
+    function withdraw(uint256 wad) external {}
 }

@@ -61,7 +61,7 @@ module.exports = async () => {
     const isHardhatNetwork = networkId === '31337' || networkId === '1337';
 
     const { deployer } = await getNamedAccounts();
-    const test = await idempotentDeploy(deployer, 'Test', [], { validateDeployment: !isHardhatNetwork });
+    const test = await idempotentDeploy(deployer, 'Test', ["Test Coin", 'TKN'], { validateDeployment: !isHardhatNetwork });
     console.log('Deployed at', test.address);
 
     if (isHardhatNetwork) {
